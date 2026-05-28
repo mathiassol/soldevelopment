@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "slug": "solengine",
+      "mode": "github",
+      "repo": "mathiassol/solengine",
+      "branch": "main",
+      "title": "SolEngine",
+      "summary": "A C++20 game engine with a pure Vulkan renderer — volk, VMA, glslang SPIR-V, forward PBR, PCF shadows, HDR/bloom, Lua scripting, Jolt physics, EnTT.",
+      "tags": ["C++20", "Vulkan", "PBR", "Game Engine", "Lua"],
+      "year": 2025,
+      "featured": true
+    },
+    {
+      "slug": "r2eco",
+      "mode": "github",
+      "repo": "mathiassol/r2eco",
+      "branch": "main",
+      "title": "Developer Ecosystem",
+      "summary": "A unified, customizable developer hub built with Rust, .NET and CEF.",
+      "tags": ["Rust", ".NET", "CEF", "Tooling"],
+      "year": 2025,
+      "featured": true
+    },
+    {
+      "slug": "this-site",
+      "mode": "custom",
+      "content": "this-site.md",
+      "title": "soldevelopment.dev",
+      "summary": "The site you are reading right now — Next.js, Tailwind, markdown content, GitHub README integration.",
+      "tags": ["Next.js", "TypeScript", "Tailwind"],
+      "year": 2026,
+      "featured": true,
+      "links": [
+        { "label": "Live site", "href": "https://soldevelopment.dev" }
+      ]
+    }
+  ]
+}
