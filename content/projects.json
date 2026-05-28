@@ -26,13 +26,13 @@
       "slug": "this-site",
       "mode": "custom",
       "content": "this-site.md",
-      "title": "soldevelopment.dev",
+      "title": "mathiassol.dev",
       "summary": "The site you are reading right now — Next.js, Tailwind, markdown content, GitHub README integration.",
       "tags": ["Next.js", "TypeScript", "Tailwind"],
       "year": 2026,
       "featured": true,
       "links": [
-        { "label": "Live site", "href": "https://soldevelopment.dev" }
+        { "label": "Live site", "href": "https://mathiassol.dev" }
       ]
     }
   ]

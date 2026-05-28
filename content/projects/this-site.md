@@ -1,4 +1,4 @@
-# soldevelopment.dev
+# mathiassol.dev
 
 This is the source of the site you're reading. It's a small Next.js app designed
 for three purposes: a portfolio, a project directory, and a markdown blog.
