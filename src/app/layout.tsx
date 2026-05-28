@@ -4,12 +4,28 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
-    default: "Mathias Solheim — SolDevelopment",
-    template: "%s — SolDevelopment"
+    default: "Mathias Solheim",
+    template: "%s — Mathias Solheim"
   },
-  description:
-    "Mathias Solheim — developer focused on hard, bottom-up problems. Portfolio, projects, and dev logs.",
-  metadataBase: new URL("https://soldevelopment.local")
+  description: "Developer writing systems from scratch. Portfolio, projects, and dev logs.",
+  metadataBase: new URL("https://mathiassol.dev"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://mathiassol.dev",
+    siteName: "Mathias Solheim",
+    title: "Mathias Solheim",
+    description: "Developer writing systems from scratch. Portfolio, projects, and dev logs."
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mathias Solheim",
+    description: "Developer writing systems from scratch."
+  },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
