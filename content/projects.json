@@ -9,7 +9,10 @@
       "summary": "A C++20 game engine with a pure Vulkan renderer — volk, VMA, glslang SPIR-V, forward PBR, PCF shadows, HDR/bloom, Lua scripting, Jolt physics, EnTT.",
       "tags": ["C++20", "Vulkan", "PBR", "Game Engine", "Lua"],
       "year": 2025,
-      "featured": true
+      "featured": true,
+      "links": [
+        { "label": "Website", "href": "https://solengine.mathiassol.dev" }
+      ]
     },
     {
       "slug": "r2eco",
