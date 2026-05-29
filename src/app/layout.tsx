@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: {
@@ -45,31 +46,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
       </body>
     </html>
-  );
-}
-
-function Header() {
-  return (
-    <header className="border-b border-border bg-bg/80 backdrop-blur sticky top-0 z-10">
-      <div className="mx-auto max-w-wide px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="font-semibold tracking-tight">
-          SolDevelopment
-        </Link>
-        <nav className="flex items-center gap-6 text-sm text-muted">
-          <Link href="/" className="hover:text-fg transition-colors">About</Link>
-          <Link href="/projects" className="hover:text-fg transition-colors">Projects</Link>
-          <Link href="/blog" className="hover:text-fg transition-colors">Blog</Link>
-          <a
-            href="https://github.com/mathiassol"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-fg transition-colors"
-          >
-            GitHub ↗
-          </a>
-        </nav>
-      </div>
-    </header>
   );
 }
 

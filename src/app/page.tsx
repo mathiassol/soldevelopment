@@ -7,8 +7,15 @@ export default function HomePage() {
   return (
     <div className="mx-auto max-w-wide px-6">
 
-      {/* Hero — more vertical room, status flows directly below */}
-      <section className="pt-24 pb-4 sm:pt-36 sm:pb-6">
+      {/* Hero — subtle accent glow gives the page a hint of color without being loud */}
+      <section className="pt-24 pb-4 sm:pt-36 sm:pb-6 relative">
+        <div
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{
+            background:
+              "radial-gradient(ellipse 700px 350px at 0% 0%, color-mix(in oklab, var(--accent) 7%, transparent), transparent)",
+          }}
+        />
         <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.08]">
           Mathias Solheim.
         </h1>
@@ -24,7 +31,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* Status — no cards, just a compact text row */}
+      {/* Status row */}
       <div className="pb-24 flex flex-wrap gap-x-6 gap-y-1 text-sm text-muted">
         <span>VG2 · Kuben VGS</span>
         <span className="text-border select-none">·</span>
@@ -37,15 +44,16 @@ export default function HomePage() {
         </a>
       </div>
 
-      {/* Skills — flat labeled list, no boxes */}
+      {/* Skills — accent-colored category labels make the section scannable */}
       <section className="border-t border-border py-16">
-        <div className="space-y-4">
+        <p className="font-mono text-[10px] uppercase tracking-widest text-muted mb-8">Skills</p>
+        <div className="space-y-3">
           {SKILL_GROUPS.map((g) => (
             <div key={g.title} className="flex gap-6 sm:gap-10 items-baseline">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-muted w-24 sm:w-32 shrink-0">
+              <span className="font-mono text-xs font-medium text-accent w-24 sm:w-32 shrink-0">
                 {g.title}
               </span>
-              <p className="text-sm text-muted leading-relaxed">
+              <p className="text-sm text-fg leading-relaxed">
                 {g.items.join("  ·  ")}
               </p>
             </div>
@@ -53,10 +61,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Projects — list, not cards */}
+      {/* Projects — big heading so the section reads before the item titles do */}
       <section className="border-t border-border pt-16 pb-24">
         <div className="flex items-baseline justify-between mb-10">
-          <h2 className="text-lg font-semibold tracking-tight">Projects</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Projects</h2>
           <Link href="/projects" className="text-sm text-muted hover:text-fg transition-colors">
             All →
           </Link>
